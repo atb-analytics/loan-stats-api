@@ -1,0 +1,26 @@
+[project]
+name = "loan-stats-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sumeet Batra", email = "batrasumeet@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.143.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+loan-stats-api = "loan_stats_api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
